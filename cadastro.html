@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roseane Designer</title>
+  <link rel="icon" href="icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/cadastro.css">
+</head>
+<body>
+  <div id="cadastro">
+    <form id="formCadastro" method="post" action="#">
+      <h1>Cadastro</h1>
+      <p>
+        <label for="nome_cad">Nome</label>
+        <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Digíte um nome..." />
+      </p>
+      <p>
+        <label for="email_cad">E-mail</label>
+        <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@htmlecsspro.com"/> 
+      </p>
+      <p>
+        <label for="senha_cad">Senha</label>
+        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="1234"/>
+      </p>
+      <p>
+        <input type="submit" id="btnCadastrar" value="Cadastrar"/>
+      </p>
+    </form>
+  </div>
+  <script>
+    document.getElementById("formCadastro").addEventListener("submit", function(event) {
+      event.preventDefault();
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>
